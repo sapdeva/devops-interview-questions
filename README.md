@@ -2594,7 +2594,10 @@ You use it this way: <code>variable “my_var” {}</code>
 <details>
 <summary>Give an example of several Terraform best practices</summary><br><b>
 </b></details>
-
+Always use var-file for terraform plan validate and check the output carefuly
+Manage backend(S3 or blob) and lockstate(DynamoDB) for tfstate files
+Maintain version control for terraform state files,if anything goes wrong we can revert back to previous state
+Use terraform data source to import for existing resources in to the code
 <details>
 <summary>Explain how implicit and explicit dependencies work in Terraform</summary><br><b>
 </b></details>
